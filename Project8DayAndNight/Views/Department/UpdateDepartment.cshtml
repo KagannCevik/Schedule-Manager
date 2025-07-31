@@ -1,0 +1,16 @@
+﻿@model Project8DayAndNight.Entities.Department
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br /><br />
+    <form method="post">
+        @Html.HiddenFor(x=>x.DepartmentId)
+        <label>Departman Adı</label>
+        @Html.TextBoxFor(x => x.DepartmentIName, new { @class = "form-control" })
+        <br />
+        <button class="btn  btn-primary"> Departmanı Kaydet</button>
+    </form>
+</div>

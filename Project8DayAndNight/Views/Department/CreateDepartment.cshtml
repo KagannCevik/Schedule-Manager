@@ -1,0 +1,15 @@
+﻿@model Project8DayAndNight.Entities.Department
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br /><br />
+          <form method="post">
+              <label>Departman Adı</label>
+              @Html.TextBoxFor(x => x.DepartmentIName, new { @class = "form-control" })
+              <br />
+              <button class="btn  btn-primary">Kaydet</button>
+          </form>
+</div>
